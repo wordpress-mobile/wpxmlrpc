@@ -58,8 +58,7 @@
 
 - (void)dealloc {
     if (_streamingCacheFile != nil) {
-        [_streamingCacheFile closeFile];
-        [[NSFileManager defaultManager] removeItemAtPath:_streamingCacheFilePath error:nil];
+        [_streamingCacheFile closeFile];        
     }
 }
 
