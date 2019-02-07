@@ -1,0 +1,20 @@
+version: 2.1
+
+orbs:
+  # This uses the iOS Orb located at https://github.com/wordpress-mobile/circleci-orbs
+  ios: wordpress-mobile/ios@0.0.18
+
+workflows:
+  test_and_validate:
+    jobs:
+      - ios/test:
+          name: Test
+          project: wpxmlrpc.xcodeproj
+          scheme: wpxmlrpc-iOS
+          device: iPhone XS
+          ios-version: "12.1"
+          bundle-install: false
+          pod-install: false
+      - ios/validate-podspec:
+          name: Validate Podspec
+          podspec-path: wpxmlrpc.podspec
