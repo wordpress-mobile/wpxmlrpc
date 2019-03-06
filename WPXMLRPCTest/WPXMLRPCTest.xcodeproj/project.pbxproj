@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		609D5C4B847D477A93B60ABB /* libPods-WPXMLRPCTest-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 877A56A0005640AF9B9F6E1D /* libPods-WPXMLRPCTest-iOS.a */; };
-		87B8CEB01EE84A35BE33679A /* libPods-WPXMLRPCTest-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D472F4DC414ECEA5AD0D42 /* libPods-WPXMLRPCTest-OSX.a */; };
+		080740B99696BE68F750AE9D /* libPods-WPXMLRPCTest-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B98FF1728C12143C24645D63 /* libPods-WPXMLRPCTest-iOS.a */; };
 		E156190316DBC5A2006532C4 /* RequestTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = E156190216DBC5A2006532C4 /* RequestTestCase.xml */; };
 		E156190416DBC630006532C4 /* RequestTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = E156190216DBC5A2006532C4 /* RequestTestCase.xml */; };
 		E156190616DBCEA0006532C4 /* entities.xml in Resources */ = {isa = PBXBuildFile; fileRef = E156190516DBCEA0006532C4 /* entities.xml */; };
@@ -58,6 +57,7 @@
 		E1D0D8D916D4088D00E33F4C /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D0D8D816D4088D00E33F4C /* libiconv.dylib */; };
 		E1D0D8E716D41BF000E33F4C /* EscapingTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = E1D0D8E616D41BF000E33F4C /* EscapingTestCase.xml */; };
 		E1D0D8E816D41BF000E33F4C /* EscapingTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = E1D0D8E616D41BF000E33F4C /* EscapingTestCase.xml */; };
+		F7C5F1E12EABB58F6B2CBCAC /* libPods-WPXMLRPCTest-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E293662513C9D5B7D6F5B220 /* libPods-WPXMLRPCTest-OSX.a */; };
 		FF561A5D1C96F93D00C692B9 /* InvalidFault.xml in Resources */ = {isa = PBXBuildFile; fileRef = FF561A5C1C96F93D00C692B9 /* InvalidFault.xml */; };
 		FF561A5E1C96FA2E00C692B9 /* InvalidFault.xml in Resources */ = {isa = PBXBuildFile; fileRef = FF561A5C1C96F93D00C692B9 /* InvalidFault.xml */; };
 		FFFB38531C7F6C2E00E064D0 /* OverflowInteger32TestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = FFFB38521C7F6C2E00E064D0 /* OverflowInteger32TestCase.xml */; };
@@ -66,13 +66,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0280A1401C4FB9C4BCFB795D /* Pods-WPXMLRPCTest-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPXMLRPCTest-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WPXMLRPCTest-OSX/Pods-WPXMLRPCTest-OSX.debug.xcconfig"; sourceTree = "<group>"; };
-		1AB8BF6FF00B1019D0E486D4 /* Pods-WPXMLRPCTest-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPXMLRPCTest-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WPXMLRPCTest-iOS/Pods-WPXMLRPCTest-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2F310760560FF8FD035F0F00 /* Pods-WPXMLRPCTest-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPXMLRPCTest-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-WPXMLRPCTest-OSX/Pods-WPXMLRPCTest-OSX.release.xcconfig"; sourceTree = "<group>"; };
-		409C1A071F84F7623E5A8D54 /* Pods-WPXMLRPCTest-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPXMLRPCTest-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-WPXMLRPCTest-iOS/Pods-WPXMLRPCTest-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		55D472F4DC414ECEA5AD0D42 /* libPods-WPXMLRPCTest-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WPXMLRPCTest-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		877A56A0005640AF9B9F6E1D /* libPods-WPXMLRPCTest-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WPXMLRPCTest-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B784562C41AA4F70AD9E1683 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		08B5FFD60652890C6429C711 /* Pods-WPXMLRPCTest-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPXMLRPCTest-OSX.debug.xcconfig"; path = "Target Support Files/Pods-WPXMLRPCTest-OSX/Pods-WPXMLRPCTest-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		336F96E2779FC1DDCD8EB430 /* Pods-WPXMLRPCTest-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPXMLRPCTest-iOS.debug.xcconfig"; path = "Target Support Files/Pods-WPXMLRPCTest-iOS/Pods-WPXMLRPCTest-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		58EA0D48FE062C7FE3BB2867 /* Pods-WPXMLRPCTest-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPXMLRPCTest-OSX.release.xcconfig"; path = "Target Support Files/Pods-WPXMLRPCTest-OSX/Pods-WPXMLRPCTest-OSX.release.xcconfig"; sourceTree = "<group>"; };
+		AE822A8C806BC65CDB4F7A91 /* Pods-WPXMLRPCTest-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPXMLRPCTest-iOS.release.xcconfig"; path = "Target Support Files/Pods-WPXMLRPCTest-iOS/Pods-WPXMLRPCTest-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B98FF1728C12143C24645D63 /* libPods-WPXMLRPCTest-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WPXMLRPCTest-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E156190216DBC5A2006532C4 /* RequestTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = RequestTestCase.xml; sourceTree = "<group>"; };
 		E156190516DBCEA0006532C4 /* entities.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = entities.xml; sourceTree = "<group>"; };
 		E156190816DBCEF3006532C4 /* entitiesDecoded.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = entitiesDecoded.xml; sourceTree = "<group>"; };
@@ -109,6 +107,7 @@
 		E1D0D8D616D4088000E33F4C /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		E1D0D8D816D4088D00E33F4C /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		E1D0D8E616D41BF000E33F4C /* EscapingTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = EscapingTestCase.xml; sourceTree = "<group>"; };
+		E293662513C9D5B7D6F5B220 /* libPods-WPXMLRPCTest-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WPXMLRPCTest-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF561A5C1C96F93D00C692B9 /* InvalidFault.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = InvalidFault.xml; sourceTree = "<group>"; };
 		FFE317091C99804100430319 /* WPBase64Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WPBase64Utils.h; path = ../WPXMLRPC/WPBase64Utils.h; sourceTree = "<group>"; };
 		FFE3170B1C99804100430319 /* WPStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WPStringUtils.h; path = ../WPXMLRPC/WPStringUtils.h; sourceTree = "<group>"; };
@@ -125,7 +124,7 @@
 				E1D0D8D916D4088D00E33F4C /* libiconv.dylib in Frameworks */,
 				E1D0D85D16D4048200E33F4C /* UIKit.framework in Frameworks */,
 				E1D0D85F16D4048200E33F4C /* Foundation.framework in Frameworks */,
-				609D5C4B847D477A93B60ABB /* libPods-WPXMLRPCTest-iOS.a in Frameworks */,
+				080740B99696BE68F750AE9D /* libPods-WPXMLRPCTest-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +134,23 @@
 			files = (
 				E1D0D8D716D4088000E33F4C /* libiconv.dylib in Frameworks */,
 				E1D0D87516D404AC00E33F4C /* Cocoa.framework in Frameworks */,
-				87B8CEB01EE84A35BE33679A /* libPods-WPXMLRPCTest-OSX.a in Frameworks */,
+				F7C5F1E12EABB58F6B2CBCAC /* libPods-WPXMLRPCTest-OSX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C46EE925F98C9357DD6C5E8C /* Pods */ = {
+		8DC068342FC8D1CE382B470A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0280A1401C4FB9C4BCFB795D /* Pods-WPXMLRPCTest-OSX.debug.xcconfig */,
-				2F310760560FF8FD035F0F00 /* Pods-WPXMLRPCTest-OSX.release.xcconfig */,
-				1AB8BF6FF00B1019D0E486D4 /* Pods-WPXMLRPCTest-iOS.debug.xcconfig */,
-				409C1A071F84F7623E5A8D54 /* Pods-WPXMLRPCTest-iOS.release.xcconfig */,
+				08B5FFD60652890C6429C711 /* Pods-WPXMLRPCTest-OSX.debug.xcconfig */,
+				58EA0D48FE062C7FE3BB2867 /* Pods-WPXMLRPCTest-OSX.release.xcconfig */,
+				336F96E2779FC1DDCD8EB430 /* Pods-WPXMLRPCTest-iOS.debug.xcconfig */,
+				AE822A8C806BC65CDB4F7A91 /* Pods-WPXMLRPCTest-iOS.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		E1D0D84B16D4033000E33F4C = {
@@ -163,7 +163,7 @@
 				E1D0D87A16D404AC00E33F4C /* WPXMLRPCTest-OSX */,
 				E1D0D85916D4048200E33F4C /* Frameworks */,
 				E1D0D85816D4048200E33F4C /* Products */,
-				C46EE925F98C9357DD6C5E8C /* Pods */,
+				8DC068342FC8D1CE382B470A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,9 +185,8 @@
 				E1D0D85E16D4048200E33F4C /* Foundation.framework */,
 				E1D0D87416D404AB00E33F4C /* Cocoa.framework */,
 				E1D0D87616D404AC00E33F4C /* Other Frameworks */,
-				B784562C41AA4F70AD9E1683 /* libPods.a */,
-				55D472F4DC414ECEA5AD0D42 /* libPods-WPXMLRPCTest-OSX.a */,
-				877A56A0005640AF9B9F6E1D /* libPods-WPXMLRPCTest-iOS.a */,
+				E293662513C9D5B7D6F5B220 /* libPods-WPXMLRPCTest-OSX.a */,
+				B98FF1728C12143C24645D63 /* libPods-WPXMLRPCTest-iOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -292,12 +291,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1D0D86A16D4048200E33F4C /* Build configuration list for PBXNativeTarget "WPXMLRPCTest-iOS" */;
 			buildPhases = (
+				DF73D7E7DA8DC15C20F6628E /* [CP] Check Pods Manifest.lock */,
 				E1D0D85216D4048200E33F4C /* Sources */,
 				E1D0D85316D4048200E33F4C /* Frameworks */,
 				E1D0D85416D4048200E33F4C /* Resources */,
-				F0587B6299B34AAA9FB66B59 /* Copy Pods Resources */,
-				BFBAC2EF15BD48C69004C938 /* Copy Pods Resources */,
-				AAAF1AEB686EE2B68187A1C7 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,11 +309,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1D0D88416D404AC00E33F4C /* Build configuration list for PBXNativeTarget "WPXMLRPCTest-OSX" */;
 			buildPhases = (
+				FCA63BA547C92A949EB52851 /* [CP] Check Pods Manifest.lock */,
 				E1D0D86D16D404AB00E33F4C /* Sources */,
 				E1D0D86E16D404AB00E33F4C /* Frameworks */,
 				E1D0D86F16D404AB00E33F4C /* Resources */,
-				257EC4085F5244599532958E /* Copy Pods Resources */,
-				01782A6E6380C2A2A7C2D994 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,77 +407,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01782A6E6380C2A2A7C2D994 /* Embed Pods Frameworks */ = {
+		DF73D7E7DA8DC15C20F6628E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WPXMLRPCTest-iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPXMLRPCTest-OSX/Pods-WPXMLRPCTest-OSX-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		257EC4085F5244599532958E /* Copy Pods Resources */ = {
+		FCA63BA547C92A949EB52851 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WPXMLRPCTest-OSX-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPXMLRPCTest-OSX/Pods-WPXMLRPCTest-OSX-resources.sh\"\n";
-		};
-		AAAF1AEB686EE2B68187A1C7 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPXMLRPCTest-iOS/Pods-WPXMLRPCTest-iOS-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		BFBAC2EF15BD48C69004C938 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPXMLRPCTest-iOS/Pods-WPXMLRPCTest-iOS-resources.sh\"\n";
-		};
-		F0587B6299B34AAA9FB66B59 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPXMLRPCTest-iOS/Pods-WPXMLRPCTest-iOS-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -530,7 +498,7 @@
 		};
 		E1D0D86B16D4048200E33F4C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AB8BF6FF00B1019D0E486D4 /* Pods-WPXMLRPCTest-iOS.debug.xcconfig */;
+			baseConfigurationReference = 336F96E2779FC1DDCD8EB430 /* Pods-WPXMLRPCTest-iOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -564,7 +532,7 @@
 		};
 		E1D0D86C16D4048200E33F4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 409C1A071F84F7623E5A8D54 /* Pods-WPXMLRPCTest-iOS.release.xcconfig */;
+			baseConfigurationReference = AE822A8C806BC65CDB4F7A91 /* Pods-WPXMLRPCTest-iOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -591,7 +559,7 @@
 		};
 		E1D0D88516D404AC00E33F4C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0280A1401C4FB9C4BCFB795D /* Pods-WPXMLRPCTest-OSX.debug.xcconfig */;
+			baseConfigurationReference = 08B5FFD60652890C6429C711 /* Pods-WPXMLRPCTest-OSX.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -628,7 +596,7 @@
 		};
 		E1D0D88616D404AC00E33F4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F310760560FF8FD035F0F00 /* Pods-WPXMLRPCTest-OSX.release.xcconfig */;
+			baseConfigurationReference = 58EA0D48FE062C7FE3BB2867 /* Pods-WPXMLRPCTest-OSX.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
