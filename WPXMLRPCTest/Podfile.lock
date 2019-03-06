@@ -1,17 +1,23 @@
 PODS:
   - CTidy (0.3.1)
-  - wpxmlrpc (0.8.2)
+  - wpxmlrpc (0.8.4)
 
 DEPENDENCIES:
   - CTidy (~> 0.3)
   - wpxmlrpc (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CTidy
+
 EXTERNAL SOURCES:
   wpxmlrpc:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   CTidy: f43e98bca701c27d9ecdda51d18734622b8cca70
-  wpxmlrpc: 38623cc415117914d6ab5bf2ab8a57a4076cc469
+  wpxmlrpc: 6ba55c773cfa27083ae4a2173e69b19f46da98e2
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: db956c2b08e8cd4baddfd48f54c96809a7273bc2
+
+COCOAPODS: 1.6.1
