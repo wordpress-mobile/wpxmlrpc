@@ -560,10 +560,9 @@
 			};
 			buildConfigurationList = E15662371CA2F1DD00E6D156 /* Build configuration list for PBXProject "wpxmlrpc" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
