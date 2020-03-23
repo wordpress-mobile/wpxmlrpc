@@ -7,6 +7,7 @@ build/
 DerivedData
 
 ## Various settings
+.DS_Store
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -61,3 +62,4 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/screenshots
+/vendor

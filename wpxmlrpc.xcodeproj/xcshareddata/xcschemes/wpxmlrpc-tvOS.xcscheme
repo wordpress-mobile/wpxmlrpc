@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E156625B1CA2F25400E6D156"
+               BlueprintIdentifier = "99943F5E1F8244EF006A35AE"
                BuildableName = "wpxmlrpc.framework"
-               BlueprintName = "wpxmlrpc-Mac"
+               BlueprintName = "wpxmlrpc-tvOS"
                ReferencedContainer = "container:wpxmlrpc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,9 +30,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E156625B1CA2F25400E6D156"
+            BlueprintIdentifier = "99943F5E1F8244EF006A35AE"
             BuildableName = "wpxmlrpc.framework"
-            BlueprintName = "wpxmlrpc-Mac"
+            BlueprintName = "wpxmlrpc-tvOS"
             ReferencedContainer = "container:wpxmlrpc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -41,9 +41,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E15662641CA2F25400E6D156"
-               BuildableName = "wpxmlrpc-MacTests.xctest"
-               BlueprintName = "wpxmlrpc-MacTests"
+               BlueprintIdentifier = "99943F771F8244FE006A35AE"
+               BuildableName = "wpxmlrpc-tvOSTests.xctest"
+               BlueprintName = "wpxmlrpc-tvOSTests"
                ReferencedContainer = "container:wpxmlrpc.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -62,9 +62,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E156625B1CA2F25400E6D156"
+            BlueprintIdentifier = "99943F5E1F8244EF006A35AE"
             BuildableName = "wpxmlrpc.framework"
-            BlueprintName = "wpxmlrpc-Mac"
+            BlueprintName = "wpxmlrpc-tvOS"
             ReferencedContainer = "container:wpxmlrpc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,9 +78,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E156625B1CA2F25400E6D156"
+            BlueprintIdentifier = "99943F5E1F8244EF006A35AE"
             BuildableName = "wpxmlrpc.framework"
-            BlueprintName = "wpxmlrpc-Mac"
+            BlueprintName = "wpxmlrpc-tvOS"
             ReferencedContainer = "container:wpxmlrpc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
