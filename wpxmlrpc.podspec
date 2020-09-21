@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.public_header_files = [ 'WPXMLRPC/WPXMLRPC.h', 'WPXMLRPC/WPXMLRPCEncoder.h', 'WPXMLRPC/WPXMLRPCDecoder.h' ]
   s.libraries    = 'iconv'
   s.requires_arc = true
-  s.ios.deployment_target = '5.0'
+  s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.7'
   s.tvos.deployment_target = '9.0'
 end
