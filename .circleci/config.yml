@@ -35,6 +35,9 @@ jobs:
     steps: 
       - fix-image
       - checkout
+      - ios/install-dependencies:
+          bundle-install: true
+          cache-prefix: cache-prefix-{{ checksum "Gemfile.lock" }}-build-and-test-v1
       - run:
           name: Build and Test
           command: |
@@ -48,6 +51,9 @@ jobs:
     steps:
       - fix-image
       - checkout
+      - ios/install-dependencies:
+          bundle-install: true
+          cache-prefix: cache-prefix-{{ checksum "Gemfile.lock" }}-validate-podspec-v1
       - run:
           name: Validate Podspec
           command: |
