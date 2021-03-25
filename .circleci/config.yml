@@ -6,7 +6,7 @@ orbs:
 
 # YAML anchors for some common/repeated values
 x-common-params:
-  - &xcode-version "12.2.0"
+  - &xcode-version "12.4.0"
   - &podspec "wpxmlrpc.podspec"
   - &on-tags-only
       tags:
