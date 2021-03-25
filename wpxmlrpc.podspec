@@ -7,10 +7,10 @@ Pod::Spec.new do |s|
                    This framework contains a very lightweight XML-RPC library, allowing you to encode and decode XML-RPC request payloads.
                    DESC
 
-  s.homepage      = "http://apps.wordpress.com"
+  s.homepage      = "https://github.com/wordpress-mobile/wpxmlrpc"
   s.license       = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author        = { "Automattic" => "mobile@automattic.com" }
-  s.social_media_url = "http://twitter.com/WordPressiOS"
+  s.social_media_url = "https://twitter.com/automattic"
 
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.7'
