@@ -2,33 +2,84 @@ version: 2.1
 
 orbs:
   # Using 1.0 of our Orbs means it will use the latest 1.0.x version from https://github.com/wordpress-mobile/circleci-orbs
-  ios: wordpress-mobile/ios@1.0 
+  ios: wordpress-mobile/ios@1.0
+
+# YAML anchors for some common/repeated values
+x-common-params:
+  - &xcode-version "12.4.0"
+  - &podspec "wpxmlrpc.podspec"
+  - &on-tags-only
+      tags:
+        only: /.*/
+      branches:
+        ignore: /.*/
+
+commands:
+  fix-image:
+    steps:
+      - run:
+          name: Fix CI Image
+          command: |
+            # Print the system ruby version for debugging
+            ruby --version
+
+            # Use the latest bundler
+            gem install bundler
+            bundle --version
+
+jobs:
+  Build and Test:
+    executor:
+      name: ios/default
+      xcode-version: *xcode-version
+    steps: 
+      - fix-image
+      - checkout
+      - ios/install-dependencies:
+          bundle-install: true
+          cache-prefix: cache-prefix-{{ checksum "Gemfile.lock" }}-build-and-test-v1
+      - run:
+          name: Build and Test
+          command: |
+            ruby --version
+            bundle exec fastlane build_and_test
+
+  Validate Podspec:
+    executor:
+      name: ios/default
+      xcode-version: *xcode-version
+    steps:
+      - fix-image
+      - checkout
+      - ios/install-dependencies:
+          bundle-install: true
+          cache-prefix: cache-prefix-{{ checksum "Gemfile.lock" }}-validate-podspec-v1
+      - run:
+          name: Validate Podspec
+          command: |
+            ruby --version
+            bundle exec fastlane validate_podspec
+
+  Publish Podspec:
+    executor:
+      name: ios/default
+      xcode-version: *xcode-version
+    steps:
+      - fix-image
+      - checkout
+      - ios/install-dependencies:
+          bundle-install: true
+          cache-prefix: cache-prefix-{{ checksum "wpxmlrpc.podspec" }}-publish-podspec-v1 # Effectively disables caching when publishing
+      - run:
+          name: Publish Podspec
+          command: |
+            ruby --version
+            bundle exec fastlane publish_podspec
 
 workflows:
   test_and_validate:
     jobs:
-      - ios/test:
-          name: Test
-          xcode-version: "11.2.1"
-          project: wpxmlrpc.xcodeproj
-          scheme: wpxmlrpc-iOS
-          device: iPhone 11
-          ios-version: "13.2.2"
-          bundle-install: false
-          pod-install: false
-      - ios/validate-podspec:
-          name: Validate Podspec
-          xcode-version: "11.2.1"
-          podspec-path: wpxmlrpc.podspec
-          bundle-install: true
-      - ios/publish-podspec:
-          name: Publish to Trunk
-          xcode-version: "11.2.1"
-          podspec-path: wpxmlrpc.podspec
-          bundle-install: true
-          post-to-slack: true
-          filters:
-            tags:
-              only: /.*/
-            branches:
-              ignore: /.*/
+      - Build and Test
+      - Validate Podspec
+      - Publish Podspec:
+          filters: *on-tags-only
