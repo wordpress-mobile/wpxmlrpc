@@ -1,3 +1,4 @@
-source "https://rubygems.org" do
-  gem "cocoapods", '~> 1.8.0'
-end
+source "https://rubygems.org"
+
+gem "cocoapods", '~> 1.8'
+gem "fastlane", '~> 2.178'
