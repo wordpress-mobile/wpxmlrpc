@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
 
   s.homepage      = "https://github.com/wordpress-mobile/wpxmlrpc"
   s.license       = { :type => 'MIT', :file => 'LICENSE.md' }
-  s.author        = { "Automattic" => "mobile@automattic.com" }
-  s.social_media_url = "https://twitter.com/automattic"
+  s.author        = { "The WordPress Mobile Team" => "mobile@automattic.com" }
 
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.7'
