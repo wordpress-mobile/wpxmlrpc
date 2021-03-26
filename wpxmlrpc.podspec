@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.swift_version = '5.0'
   
-  s.source        = { :git => "https://github.com/wordpress-mobile/wpxmlrpc.git", :tag => "#{s.version}" }
+  s.source        = { :git => "https://github.com/wordpress-mobile/wpxmlrpc.git", :tag => s.version.to_s }
   s.source_files  = 'WPXMLRPC'
   s.public_header_files = [ 'WPXMLRPC/WPXMLRPC.h', 'WPXMLRPC/WPXMLRPCEncoder.h', 'WPXMLRPC/WPXMLRPCDecoder.h' ]
   s.libraries     = 'iconv'
