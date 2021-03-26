@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary       = "Lightweight XML-RPC library."
   s.description   = <<-DESC
                     This framework contains a very lightweight XML-RPC library, allowing you to encode and decode XML-RPC request payloads.
-                    DESC
+                  DESC
 
   s.homepage      = "https://github.com/wordpress-mobile/wpxmlrpc"
   s.license       = { :type => 'MIT', :file => 'LICENSE.md' }
