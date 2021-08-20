@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name          = 'wpxmlrpc'
-  s.version       = '0.9.0'
+  s.version       = '0.9.0-beta-999'
 
   s.summary       = 'Lightweight XML-RPC library.'
   s.description   = <<-DESC
