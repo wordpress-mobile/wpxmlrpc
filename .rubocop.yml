@@ -1,0 +1,12 @@
+# Opt in to new cops by default
+AllCops:
+  NewCops: enable
+
+# Allow the Podspec filename to match the project
+Naming/FileName:
+  Exclude:
+    - 'wpxmlrpc.podspec'
+
+# Override the maximum line length
+Layout/LineLength:
+  Max: 160
