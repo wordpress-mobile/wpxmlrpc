@@ -1,52 +1,53 @@
+# frozen_string_literal: true
+
 default_platform(:ios)
 
 platform :ios do
-  desc "Build and test the Pod"
+  desc 'Build and test the Pod'
   lane :build_and_test do
     run_tests(
-      scheme: "wpxmlrpc-iOS"
+      scheme: 'wpxmlrpc-iOS'
     )
   end
 
-  desc "Validate Podspec"
+  desc 'Validate Podspec'
   lane :validate_podspec do
     pod_lib_lint(
       use_bundle_exec: true,
-      verbose: true,
+      verbose: true
     )
   end
 
-  desc "Publish Podspec"
+  desc 'Publish Podspec'
   lane :publish_podspec do
     require 'cocoapods-core'
 
     pod_push(
       use_bundle_exec: true,
-      path: "wpxmlrpc.podspec",
-      verbose: true,
+      path: 'wpxmlrpc.podspec',
+      verbose: true
     )
 
-    podspec = Pod::Spec::from_file('../wpxmlrpc.podspec')
+    podspec = Pod::Spec.from_file('../wpxmlrpc.podspec')
 
     slack(
       message: ":tada: #{podspec.module_name} #{podspec.version} successfully published to CocoaPods trunk!\nIt will take a few minutes for this version to be deployed to the CocoaPods CDN.",
       success: true,
       slack_url: ENV['PODS_SLACK_WEBHOOK'],
       payload: [
-          "Build URL" => ENV["CIRCLE_BUILD_URL"],
-       ]
+        'Build URL' => ENV['CIRCLE_BUILD_URL']
+      ]
     )
   end
 
-  error do |lane, exception|
+  error do |_lane, _exception|
     slack(
-       pretext: "CI Error",
-       success: false,
-       slack_url: ENV['PODS_SLACK_WEBHOOK'],
-       payload: [
-          "Build URL" => ENV["CIRCLE_BUILD_URL"],
-       ]
+      pretext: 'CI Error',
+      success: false,
+      slack_url: ENV['PODS_SLACK_WEBHOOK'],
+      payload: [
+        'Build URL' => ENV['CIRCLE_BUILD_URL']
+      ]
     )
   end
 end
-
