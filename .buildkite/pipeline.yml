@@ -19,7 +19,7 @@ steps:
   #################
   # Validate Podspec
   #################
-  - label: "🔬 Validating Podspec"
+  - label: "🔬 Validate Podspec"
     key: "validate"
     command: "validate_podspec"
     env: *common_env
