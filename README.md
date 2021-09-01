@@ -1,7 +1,5 @@
 # WordPress XML-RPC Framework
 
-[![Build status](https://badge.buildkite.com/7b9af7851c2ccd9c47a165cf8344a3e2a0da34140da0311cbc.svg)](https://buildkite.com/wordpress-mobile/wpxmlrpc)
-
 The WordPress XML-RPC library is a lightweight XML-RPC client for iOS
 and OS X.
 
