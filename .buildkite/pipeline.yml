@@ -7,12 +7,12 @@ common_params:
 
 # This is the default pipeline – it will build and test the pod
 steps:
-  #################
-  # Build and Test
-  #################
+  ########################
+  # Validate Swift Package
+  ########################
   - label: "🧪 Build and Test"
     key: "test"
-    command: "build_and_test_pod"
+    command: "./buildkite/validate_swift_package"
     env: *common_env
     plugins: *common_plugins
 

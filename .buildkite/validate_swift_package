@@ -1,0 +1,15 @@
+#!/bin/bash -eu
+#
+# Any arguments passed to this script will be passed through to `fastlane`.
+# If no argument is passed, the `test` lane will be called by default.
+
+echo "--- :rubygems: Setting up Gems"
+install_gems
+
+echo "--- :test_tube: Building and testing the Swift Package"
+
+# For some reason this fixes a failure in `lib lint`
+# https://github.com/Automattic/buildkite-ci/issues/7
+xcrun simctl list >> /dev/null
+
+bundle exec fastlane "${@:-test}"

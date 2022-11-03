@@ -22,4 +22,9 @@ Pod::Spec.new do |s|
   s.source_files  = 'WPXMLRPC'
   s.public_header_files = ['WPXMLRPC/WPXMLRPC.h', 'WPXMLRPC/WPXMLRPCEncoder.h', 'WPXMLRPC/WPXMLRPCDecoder.h']
   s.libraries = 'iconv'
+
+  s.test_spec do |test|
+    test.source_files = 'WPXMLRPCTest/Tests/*.{h,m}'
+    test.resources = 'WPXMLRPCTest/Test Data/*'
+  end
 end
