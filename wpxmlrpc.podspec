@@ -19,12 +19,12 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
 
   s.source        = { git: 'https://github.com/wordpress-mobile/wpxmlrpc.git', tag: s.version.to_s }
-  s.source_files  = 'WPXMLRPC'
-  s.public_header_files = ['WPXMLRPC/WPXMLRPC.h', 'WPXMLRPC/WPXMLRPCEncoder.h', 'WPXMLRPC/WPXMLRPCDecoder.h']
+  s.source_files  = 'Sources/wpxmlrpc/**/*.{h,m}'
+  s.public_header_files = 'Sources/wpxmlrpc/include/*.h'
   s.libraries = 'iconv'
 
   s.test_spec do |test|
-    test.source_files = 'WPXMLRPCTest/Tests/*.{h,m}'
-    test.resources = 'WPXMLRPCTest/Test Data/*'
+    test.source_files = 'Tests/AllTests/*.{h,m}'
+    test.resources = 'Tests/AllTests/Resources/*'
   end
 end

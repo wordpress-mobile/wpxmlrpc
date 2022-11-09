@@ -12,15 +12,13 @@ let package = Package(
     targets: [
         .target(
             name: "wpxmlrpc",
-            path: "WPXMLRPC",
             linkerSettings: [.linkedLibrary("iconv")]
         ),
         .testTarget(
-            name: "Tests",
+            name: "AllTests",
             dependencies: [.target(name: "wpxmlrpc")],
-            path: "WPXMLRPCTest",
-            resources: [.process("Test Data")],
-            cSettings: [.headerSearchPath("../WPXMLRPC")]
+            resources: [.process("Resources")],
+            cSettings: [.headerSearchPath("../../Sources/wpxmlrpc")]
         )
     ]
 )
