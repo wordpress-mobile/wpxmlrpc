@@ -46,4 +46,4 @@ _None._
 
 ### Internal Changes
 
-_None._
+- Added this changelog file [#67]
