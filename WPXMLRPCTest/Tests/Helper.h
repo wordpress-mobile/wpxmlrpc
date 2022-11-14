@@ -5,4 +5,3 @@
 + (NSBundle *)wpxmlrpc_assetsBundle;
 
 @end
-
