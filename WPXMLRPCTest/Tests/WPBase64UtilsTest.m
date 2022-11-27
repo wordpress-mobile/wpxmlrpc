@@ -1,4 +1,5 @@
 #import "WPBase64Utils.h"
+#import "Helper.h"
 
 #import <XCTest/XCTest.h>
 
@@ -15,9 +16,11 @@
 }
 
 - (void)setUp {
-    expectedEncoded = [NSString stringWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"TestImage" ofType:@"base64"] encoding:NSASCIIStringEncoding error:nil];
-    encodedFilePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"TestImage" ofType:@"png"];
+    expectedEncoded = [NSString stringWithContentsOfFile:[[NSBundle wpxmlrpc_assetsBundle] pathForResource:@"TestImage" ofType:@"base64"] encoding:NSASCIIStringEncoding error:nil];
+    encodedFilePath = [[NSBundle wpxmlrpc_assetsBundle] pathForResource:@"TestImage" ofType:@"bin"];
     expectedDecoded = [NSData dataWithContentsOfFile:encodedFilePath];
+    XCTAssertEqual(expectedDecoded.length, 4326);
+
     encodedControlCharacters = @"\r\n";
     expectedDecodedControlCharacters = [@"" dataUsingEncoding:NSASCIIStringEncoding];
 }

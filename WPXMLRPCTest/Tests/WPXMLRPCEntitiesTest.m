@@ -1,6 +1,7 @@
 #import "WPXMLRPCDecoder.h"
 #import "WPXMLRPCEncoder.h"
 #import "WPStringUtils.h"
+#import "Helper.h"
 
 #import <XCTest/XCTest.h>
 
@@ -11,12 +12,12 @@
 @implementation WPXMLRPCEntitiesTest
 
 - (void)testXMLEntitiesDecoding {
-    NSString *testCase = [[NSBundle bundleForClass:[self class]] pathForResource:@"entities" ofType:@"xml"];
+    NSString *testCase = [[NSBundle wpxmlrpc_assetsBundle] pathForResource:@"entities" ofType:@"xml"];
     NSData *testCaseData =[[NSData alloc] initWithContentsOfFile:testCase];
     WPXMLRPCDecoder *decoder = [[WPXMLRPCDecoder alloc] initWithData:testCaseData];
     NSString *decoded = [[decoder object] objectForKey:@"description"];
 
-    NSString *expectedPath = [[NSBundle bundleForClass:[self class]] pathForResource:@"entitiesDecoded" ofType:@"xml"];
+    NSString *expectedPath = [[NSBundle wpxmlrpc_assetsBundle] pathForResource:@"entitiesDecoded" ofType:@"xml"];
     NSData *expectedData =[[NSData alloc] initWithContentsOfFile:expectedPath];
     NSString *expected = [[NSString alloc] initWithData:expectedData encoding:NSUTF8StringEncoding];
     XCTAssertEqualObjects(decoded, expected);

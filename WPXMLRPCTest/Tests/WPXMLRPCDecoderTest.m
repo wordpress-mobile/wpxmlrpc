@@ -1,5 +1,6 @@
 #import "WPXMLRPCDecoder.h"
 #import "WPStringUtils.h"
+#import "Helper.h"
 #import <XCTest/XCTest.h>
 
 @interface WPXMLRPCDecoderTest : XCTestCase
@@ -11,6 +12,7 @@
 
 - (void)setUp {
     myTestCases = [self testCases];
+    XCTAssertNotNil(myTestCases);
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
 }
 
@@ -22,7 +24,7 @@
         if ([testCaseName isEqualToString:@"IncompleteXmlTest"]) {
             continue;
         }
-        NSString *testCase = [[self unitTestBundle] pathForResource:testCaseName ofType:@"xml"];
+        NSString *testCase = [[NSBundle wpxmlrpc_assetsBundle] pathForResource:testCaseName ofType:@"xml"];
         NSData *testCaseData =[[NSData alloc] initWithContentsOfFile:testCase];
         WPXMLRPCDecoder *decoder = [[WPXMLRPCDecoder alloc] initWithData:testCaseData];
         id testCaseResult = [myTestCases objectForKey:testCaseName];
@@ -38,7 +40,7 @@
         return;
     }
     NSString *testCaseName = @"IncompleteXmlTest";
-    NSString *testCase = [[self unitTestBundle] pathForResource:testCaseName ofType:@"xml"];
+    NSString *testCase = [[NSBundle wpxmlrpc_assetsBundle] pathForResource:testCaseName ofType:@"xml"];
     NSData *testCaseData =[[NSData alloc] initWithContentsOfFile:testCase];
     WPXMLRPCDecoder *decoder = [[WPXMLRPCDecoder alloc] initWithData:testCaseData];
     id testCaseResult = [myTestCases objectForKey:testCaseName];
@@ -48,7 +50,7 @@
 }
 
 - (void)testNoXmlThrowsError {
-    NSString *testCase = [[self unitTestBundle] pathForResource:@"NoXmlResponseTestCase" ofType:@"xml"];
+    NSString *testCase = [[NSBundle wpxmlrpc_assetsBundle] pathForResource:@"NoXmlResponseTestCase" ofType:@"xml"];
     NSData *testCaseData =[[NSData alloc] initWithContentsOfFile:testCase];
     WPXMLRPCDecoder *decoder = [[WPXMLRPCDecoder alloc] initWithData:testCaseData];
     XCTAssertNil([decoder object]);
@@ -59,7 +61,7 @@
 }
 
 - (void)testInvalidFaultXmlThrowsError {
-    NSString *testCase = [[self unitTestBundle] pathForResource:@"InvalidFault" ofType:@"xml"];
+    NSString *testCase = [[NSBundle wpxmlrpc_assetsBundle] pathForResource:@"InvalidFault" ofType:@"xml"];
     NSData *testCaseData =[[NSData alloc] initWithContentsOfFile:testCase];
     WPXMLRPCDecoder *decoder = [[WPXMLRPCDecoder alloc] initWithData:testCaseData];
     XCTAssertNotNil([decoder object]);
@@ -71,12 +73,8 @@
 
 #pragma mark -
 
-- (NSBundle *)unitTestBundle {
-    return [NSBundle bundleForClass:[WPXMLRPCDecoderTest class]];
-}
-
 - (NSDictionary *)testCases {
-    NSString *file = [[self unitTestBundle] pathForResource:@"TestCases" ofType:@"plist"];
+    NSString *file = [[NSBundle wpxmlrpc_assetsBundle] pathForResource:@"TestCases" ofType:@"plist"];
     NSDictionary *testCases = [[NSDictionary alloc] initWithContentsOfFile:file];
     
     return testCases;

@@ -1,4 +1,5 @@
 #import "WPXMLRPCEncoder.h"
+#import "Helper.h"
 #import <XCTest/XCTest.h>
 
 @interface WPXMLRPCEncoderTest : XCTestCase
@@ -9,7 +10,7 @@
 
 - (void)testRequestEncoder {
     WPXMLRPCEncoder *encoder = [[WPXMLRPCEncoder alloc] initWithMethod:@"wp.getUsersBlogs" andParameters:@[@"username", @"password"]];
-    NSString *testCase = [[self unitTestBundle] pathForResource:@"RequestTestCase" ofType:@"xml"];
+    NSString *testCase = [[NSBundle wpxmlrpc_assetsBundle] pathForResource:@"RequestTestCase" ofType:@"xml"];
     NSString *testCaseData = [[NSString alloc] initWithContentsOfFile:testCase encoding:NSUTF8StringEncoding error:nil];
     NSString *parsedResult = [[NSString alloc] initWithData:[encoder dataEncodedWithError:nil] encoding:NSUTF8StringEncoding];
     XCTAssertEqualObjects(parsedResult, testCaseData);
@@ -28,7 +29,7 @@
 }
 
 - (void)testStreamingEncoder {
-    NSString * filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"TestImage" ofType:@"png"];
+    NSString * filePath = [[NSBundle wpxmlrpc_assetsBundle] pathForResource:@"TestImage" ofType:@"bin"];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString *directory = [paths objectAtIndex:0];
     NSString *guid = [[NSProcessInfo processInfo] globallyUniqueString];
@@ -44,12 +45,6 @@
     
     XCTAssertTrue([[NSFileManager defaultManager] removeItemAtPath:cacheFilePath error:nil], @"It must be possible to remove the file");
 
-}
-
-#pragma mark - 
-
-- (NSBundle *)unitTestBundle {
-    return [NSBundle bundleForClass:[WPXMLRPCEncoderTest class]];
 }
 
 @end
