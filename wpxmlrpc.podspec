@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.author        = { 'The WordPress Mobile Team' => 'mobile@wordpress.org' }
 
   s.ios.deployment_target = '11.0'
-  s.osx.deployment_target = '10.7'
+  s.osx.deployment_target = '10.13'
   s.tvos.deployment_target = '9.0'
   s.swift_version = '5.0'
 
