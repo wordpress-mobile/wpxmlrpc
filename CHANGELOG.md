@@ -38,11 +38,21 @@ _None._
 
 ### New Features
 
-- Add Swift Package Manager support [#66]
+_None._
 
 ### Bug Fixes
 
 _None._
+
+### Internal Changes
+
+_None._
+
+## [0.10.0](https://github.com/wordpress-mobile/wpxmlrpc/releases/tag/0.10.0)
+
+### New Features
+
+- Add Swift Package Manager support [#66]
 
 ### Internal Changes
 
