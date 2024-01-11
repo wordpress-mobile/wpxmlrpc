@@ -34,7 +34,7 @@ _None._
 
 ### Breaking Changes
 
-_None._
+- Remove tvOS support [#77]
 
 ### New Features
 
