@@ -3,7 +3,7 @@ common_params:
   plugins: &common_plugins
   - automattic/a8c-ci-toolkit#2.15.0
   env: &common_env
-    IMAGE_ID: xcode-15.1
+    IMAGE_ID: xcode-14.3.1
 
 # This is the default pipeline – it will build and test the pod
 steps:
