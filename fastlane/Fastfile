@@ -8,7 +8,7 @@ platform :ios do
     run_tests(
       package_path: '.',
       scheme: 'wpxmlrpc',
-      device: 'iPhone 14',
+      device: 'iPhone 16',
       prelaunch_simulator: true,
       buildlog_path: File.join(__dir__, '.build', 'logs'),
       derived_data_path: File.join(__dir__, '.build', 'derived-data')
