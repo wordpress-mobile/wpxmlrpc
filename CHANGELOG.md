@@ -35,6 +35,7 @@ _None._
 ### Breaking Changes
 
 - Remove tvOS support [#77]
+- Drop CocoaPods distribution; the package is now SwiftPM-only. Existing consumers can stay on `0.10.0` (the last Pod-published tag).
 
 ### New Features
 
