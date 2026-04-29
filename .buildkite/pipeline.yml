@@ -12,7 +12,7 @@ common_params:
   plugins: &common_plugins
   - automattic/a8c-ci-toolkit#3.5.1
 
-# This is the default pipeline – it will build and test the pod
+# This is the default pipeline – it will build and test the package
 steps:
   ########################
   # Validate Swift Package
@@ -21,32 +21,3 @@ steps:
     key: "test"
     command: "validate_swift_package"
     plugins: *common_plugins
-
-  #################
-  # Validate Podspec
-  #################
-  - label: "🔬 Validate Podspec"
-    key: "validate"
-    command: "validate_podspec"
-    plugins: *common_plugins
-
-  #################
-  # Lint
-  #################
-  - label: "🧹 Lint"
-    key: "lint"
-    command: "lint_pod"
-    plugins: *common_plugins
-
-  #################
-  # Publish the Podspec (if we're building a tag)
-  #################
-  - label: "⬆️ Publish Podspec"
-    key: "publish"
-    command: .buildkite/publish-pod.sh
-    plugins: *common_plugins
-    depends_on:
-      - "test"
-      - "validate"
-      - "lint"
-    if: build.tag != null

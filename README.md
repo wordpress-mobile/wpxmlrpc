@@ -8,15 +8,18 @@ networking code, and a few additions of our own.
 
 # Installation
 
-WordPress XML-RPC uses [CocoaPods](http://cocoapods.org/) for easy
-dependency management.
+WordPress XML-RPC is distributed as a Swift Package.
+Add it to your project as a package dependency:
 
-Just add this to your Podfile and run `pod install`:
+```swift
+dependencies: [
+    .package(url: "https://github.com/wordpress-mobile/wpxmlrpc.git", from: "0.10.0")
+]
+```
 
-	pod 'wpxmlrpc'
+Or add it via Xcode: **File → Add Package Dependencies…** and enter the repository URL.
 
-Another option, if you don't use CocoaPods, is to copy the `WPXMLRPC`
-folder to your project.
+Existing CocoaPods consumers can stay on `pod 'wpxmlrpc', '~> 0.10.0'` — the last podspec-published tag — but no new podspecs will be released.
 
 # Usage
 
