@@ -2,5 +2,5 @@
 
 source 'https://rubygems.org'
 
-gem 'fastlane', '~> 2.236'
+gem 'fastlane', '~> 2.237'
 gem 'rubocop', '~> 1.88'
