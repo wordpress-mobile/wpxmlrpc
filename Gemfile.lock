@@ -9,8 +9,8 @@ GEM
     ast (2.4.3)
     atomos (0.1.3)
     aws-eventstream (1.4.1)
-    aws-partitions (1.1307.0)
-    aws-sdk-core (3.269.0)
+    aws-partitions (1.1309.0)
+    aws-sdk-core (3.271.0)
       aws-eventstream (~> 1, >= 1.4.1)
       aws-partitions (~> 1, >= 1.992.0)
       aws-sigv4 (~> 1.9)
@@ -19,10 +19,10 @@ GEM
       jmespath (~> 1, >= 1.6.1)
       logger
       rexml (~> 3.4, >= 3.4.2)
-    aws-sdk-kms (1.144.0)
-      aws-sdk-core (~> 3, >= 3.269.0)
+    aws-sdk-kms (1.145.0)
+      aws-sdk-core (~> 3, >= 3.270.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.244.0)
+    aws-sdk-s3 (1.245.0)
       aws-sdk-core (~> 3, >= 3.269.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
@@ -42,7 +42,7 @@ GEM
     declarative (0.0.20)
     digest-crc (0.7.0)
       rake (>= 12.0.0, < 14.0.0)
-    domain_name (0.7.20261031)
+    domain_name (0.7.20261117)
     dotenv (2.8.1)
     emoji_regex (3.2.3)
     erb (6.0.7)
@@ -63,7 +63,7 @@ GEM
     faraday-retry (2.4.0)
       faraday (~> 2.0)
     fastimage (2.4.3)
-    fastlane (2.241.2)
+    fastlane (2.242.0)
       CFPropertyList (>= 2.3, < 5.0.0)
       abbrev (~> 0.1)
       addressable (>= 2.9.0, < 3.0.0)
@@ -108,7 +108,7 @@ GEM
       ostruct (>= 0.1.0)
       plist (>= 3.1.0, < 4.0.0)
       rubyzip (>= 3.4.0, < 4.0.0)
-      security (~> 0.3)
+      security (~> 0.4)
       simctl (~> 1.6.3)
       terminal-notifier (>= 3.1.0, < 4.0.0)
       terminal-table (~> 4)
@@ -287,7 +287,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fastlane (~> 2.241)
+  fastlane (~> 2.242)
   rubocop (~> 1.92)
 
 BUNDLED WITH
