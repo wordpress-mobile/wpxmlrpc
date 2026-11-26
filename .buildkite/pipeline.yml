@@ -5,7 +5,7 @@ agents:
   queue: mac
 
 env:
-  IMAGE_ID: xcode-27.2-v3
+  IMAGE_ID: xcode-27.2-v4
 
 # Nodes with values to reuse in the pipeline.
 common_params:
